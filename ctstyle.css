@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Merriweather');
-
+body {
+	font-family:'Lato', sans-serif;
+	font-size: 1.5em;
+	line-height: 150%;
+	position: relative;
+	background-color: #fff;
+}
+p {
+	background: linear-gradient(180deg, #000 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
+	background-size: 100% 1.7em;
+}
 .fixed {
 	position: fixed;
 }
@@ -14,11 +24,4 @@ h1 {
 	font-weight: normal;
 	font-size: 4em;
 	color: #bc3485
-}
-p {
-	font-family:'Lato', sans-serif;
-	font-size: 1.5em;
-	line-height: 150%;
-	background: linear-gradient(180deg, #000 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
-	background-size: 100% 1.7em;
 }
