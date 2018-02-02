@@ -23,13 +23,6 @@ h1 {
 	font-size: 4em;
 	color: #bc3485
 }
-
-header h4 {
-	font-size: 2em;
-	color: #bc3485;
-	font-style: normal;
-}
-
 p {
-	bottom-border: 6px lightgrey;
+	border-bottom: 6px lightgrey;
 }
