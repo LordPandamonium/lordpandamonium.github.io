@@ -12,12 +12,12 @@ body {
 	position: fixed;
 }
 
-header {
+head {
 	padding-top: 20px;
 	background-color: #fff
 }
 
-header h1 {
+head h1 {
 	font-family: 'Merriweather', serif;
 	color:#bc3485;
 	font-weight: normal;
