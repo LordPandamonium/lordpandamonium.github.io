@@ -17,14 +17,19 @@ header {
 	background-color: #fff
 }
 
-header h1 {
+h1 {
 	font-family: 'Merriweather', serif;
 	font-weight: normal;
 	font-size: 4em;
+	color: #bc3485
 }
 
 header h4 {
 	font-size: 2em;
 	color: #bc3485;
 	font-style: normal;
+}
+
+p {
+	bottom-border: 6px lightgrey;
 }
