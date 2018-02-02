@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Merriweather');
 <style>
 body {
-	font-family:'Lato', sans-serif;
-	font-size: 1.5em;
-	line-height: 150%;
 	position: relative;
 	background-color: #fff;
 }
@@ -25,5 +22,8 @@ h1 {
 }
 p {
 	border-bottom: 4px solid red;
+	font-family:'Lato', sans-serif;
+	font-size: 1.5em;
+	line-height: 150%;
 }
 </style>
