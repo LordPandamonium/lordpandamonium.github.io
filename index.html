@@ -2,6 +2,10 @@
 <header>
 	<title>This Site Thingy</title>
 	<link rel="stylesheet" href="https://lordpandamonium.github.io/ctstyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </header>
 <html>
 	<body>
@@ -9,12 +13,16 @@
 		<h1>Hello World</h1>
 		<p class = "top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<p class = "bot"> these are my group members</p>
-		<ul>
-			<li>Charles Tam</li>
-			<li>Kyung Back</li>
-			<li>Michael Rubino</li>
-			<li>Ryan Chang</li>
-		</ul>
+		<div data-role="main" class="ui-content">
+			<div data-role="collapsible">
+				<h4>Members</h4>
+				<ul data-role="listview">
+					<li><a href="#">Charles Tam</a></li>
+					<li><a href="#">Kyung Back</a></li>
+					<li><a href="#">Ryan Chang</a></li>
+					<li><a href="#">Micheal Rubino</a></li>
+				</ul>
+			</div>
 		
 	</body>
 </html>
