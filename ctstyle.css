@@ -6,9 +6,10 @@ body {
 	position: relative;
 	background-color: #fff;
 }
-p {
-	background: linear-gradient(180deg, #000 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
-	background-size: 100% 1.7em;
+p.top {
+	border-top-width: 5px;
+	border-top-color: #ff0000;
+	border-top-style: dashed;
 }
 .fixed {
 	position: fixed;
