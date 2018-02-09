@@ -1,0 +1,22 @@
+<html>
+<html>
+<body>
+
+<p id="p2">Echo</p>
+
+<p>The paragraph above was changed by a script.</p>
+
+<button onclick="buttonFun() ; goBack()">Go Back</button>
+
+<script>
+document.getElementById("p2").style.color = "green";
+document.getElementById("p2").style.fontFamily = "Arial";
+document.getElementById("p2").style.fontSize = "larger";
+function buttonFun() {
+    alert("Going Back to the index");
+}
+</script>
+
+</body>
+</html>
+
