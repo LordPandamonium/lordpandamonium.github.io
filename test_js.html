@@ -5,15 +5,15 @@
 
 <p>The paragraph above was changed by a script.</p>
 
-<button onclick="buttonFun()">about</button>
-    <button onclick="goBack()">go back</button>
+<button onclick="buttonFun(); goBack()">back</button>
+
 
 <script>
 document.getElementById("p2").style.color = "green";
 document.getElementById("p2").style.fontFamily = "Arial";
 document.getElementById("p2").style.fontSize = "larger";
 function buttonFun() {
-    alert("this is a button")
+    alert("this is a button, it will now lead you back to your previous page")
 }
 function goBack() {
     window.history.back();
