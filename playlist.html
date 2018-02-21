@@ -5,69 +5,92 @@
 	<link rel="stylesheet" href="https://lordpandamonium.github.io/ctstyle.css">
 </head>
 <body>
-	<h1>My Playlist</h1>
-	<table id="table">
-		<tr>
-			<td>Song Title</td>
-			<td>Artist</td>
-			<td>Album</td>
-			<td>Duration</td>
-		</tr>
-
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-	</table>
-
-	<script type="text/javascript">
-		var array = [
-					["Perfume!", "fusq", "Lost Station EP", "2:54"],
-					["Hot Milk","Ujico*/Snail's House","Ordinary Songs 2", "4:06"],
-					["In the Shadows","Foreign Air","For the Light", "4:03"],
-					["Purple Yellow Red and Blue","Portugal. The Man","4:09"],
-					["Withdrawal","Max Frost","Intoxication","3:00"]
-					],
-			table = document.getElementById("table");
-
-		for (var i = 1; < table.rows.length; i++)
-		{
-			for(var j = 0; j < table.rows[i].cells.length; j++)
-			{
-				table.rows[i].cells[j].innerHTML = array[i -0][j];
-			}
-		}
-	</script>
-
-	</body>
+	<h2>My Playlist</h2>
+        <table id="table" border="1">
+            
+            <!-- The Row Number 0 -->
+            <tr>
+                <th>Song Title</th>
+                <th>Artist</th>
+                <th>Album</th>
+                <th>Duration</th>
+            </tr>
+            <!-- End Row Number 0 -->
+            <!--
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            -->
+        </table>
+        
+        <script>
+            
+            var array = [["Perfume!","fusq","Lost Station EP","2:54"],
+                         ["Hot Milk","Ujico*/Snail's House","Ordinary Songs 2", "4:06"],
+                         ["In the Shadows","Foreign Air","For the Light", "4:03"],
+                         ["Purple Yellow Red and Blue","Portugal. The Man","Evil Friends", "4:09"],
+                         ["Withdrawal","Max Frost","Intoxication", "3:00"],
+                         ["Perfume!","fusq","Lost Station EP","2:54"],
+                         ["Hot Milk","Ujico*/Snail's House","Ordinary Songs 2", "4:06"],
+                         ["In the Shadows","Foreign Air","For the Light", "4:03"],
+                         ["Purple Yellow Red and Blue","Portugal. The Man","Evil Friends", "4:09"],
+                         ["Withdrawal","Max Frost","Intoxication", "3:00"]],
+                table = document.getElementById("table");
+        
+        /* Method 1
+        // rows
+        for(var i = 1; i < table.rows.length; i++)
+        {
+          // cells
+          for(var j = 0; j < table.rows[i].cells.length; j++)
+          {
+              table.rows[i].cells[j].innerHTML = array[i - 1][j];
+          }
+        }
+            */
+           
+           // Method 2
+           
+           for(var i = 0; i < array.length; i++)
+           {
+               // create a new row
+               var newRow = table.insertRow(table.length);
+               for(var j = 0; j < array[i].length; j++)
+               {
+                   // create a new cell
+                   var cell = newRow.insertCell(j);
+                   
+                   // add value to the cell
+                   cell.innerHTML = array[i][j];
+               }
+           }
+        </script>
+        
+    </body>
 </html>
