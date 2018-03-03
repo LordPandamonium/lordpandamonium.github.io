@@ -206,9 +206,16 @@
                 obj.style.display = 'none';
             }
 
-            function orgTotal(tableId) {
-                var rows = document.getElementById(tableId).getElementsByTagName("tbody")[0].getElementsByTagName("tr").length;
-                return rows
+            function orgTotal(obj) {
+            var result = 0;
+            for(var prop in obj) {
+                if (obj.hasOwnProperty(prop)) {
+                // or Object.prototype.hasOwnProperty.call(obj, prop)
+                result++;
+                }
+              }
+              return result;
+}
 
                 //total organizations
             }
@@ -230,9 +237,10 @@
                         obj['Founding Year'] + "</td><td>" +
                         obj['Size'] + "</td><td>" +
                         obj['Type of Data Used'] + "</td></tr>";
-                    totorgs += orgTotal(orgstable);
+                    totorgs += orgTotal(obj['organizations']);
                 }
             }
+            text += "<tr><td colspan='4'>Total Organizations</td><td align='center'>" + totorgs + "</td></tr>";
             document.getElementById("orgtab").innerHTML = text;
         </script>
     </body>
